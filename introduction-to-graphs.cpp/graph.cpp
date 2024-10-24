@@ -19,11 +19,11 @@ int main() {
     }
 
     for (int i=1; i<n; i++) {
-        for (int j=1; j<=n; j++) cout << matriz[i][j] << " ";
+        for (int j=1; j<=n; j++) cout << matriz[i][j] << "#";
         cout << "\n";
     }
 
-    for (int i=1; i<n; i++) cout << matriz[n][i] << " ";
+    for (int i=1; i<n; i++) cout << matriz[n][i] << "# ";
     cout << matriz[n][n];
 
 
