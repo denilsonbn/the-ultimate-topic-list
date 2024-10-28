@@ -1,0 +1,1 @@
+{"name":"Local: flipping-bits","url":"c:\\Users\\denil\\OneDrive\\Desktop\\code\\the-ultimate-topic-list\\flipping-bits.cpp","tests":[{"id":1728151367436,"input":"3\n2147483647\n1\n0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\denil\\OneDrive\\Desktop\\code\\the-ultimate-topic-list\\flipping-bits.cpp","group":"local","local":true}
