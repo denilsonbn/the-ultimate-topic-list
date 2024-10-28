@@ -1,0 +1,1 @@
+{"name":"Local: diluc-and-kalea","url":"c:\\Users\\denilson\\Desktop\\exe\\gcd-and-lcm\\diluc-and-kalea.cpp","tests":[{"id":1729651378717,"input":"5\n3\nDDK\n6\nDDDDDD\n4\nDKDK\n1\nD\n9\nDKDKDDDDK","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\denilson\\Desktop\\exe\\gcd-and-lcm\\diluc-and-kalea.cpp","group":"local","local":true}

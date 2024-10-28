@@ -1,0 +1,1 @@
+{"name":"Local: team","url":"c:\\Users\\denilson\\Desktop\\exe\\A1\\team.cpp","tests":[{"id":1729989789735,"input":"2\n1 0 0\n0 1 1\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\denilson\\Desktop\\exe\\A1\\team.cpp","group":"local","local":true}

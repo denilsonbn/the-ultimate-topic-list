@@ -1,0 +1,1 @@
+{"name":"Local: little-chef-and-sums","url":"c:\\Users\\denilson\\Desktop\\exe\\prefix-sum\\little-chef-and-sums.cpp","tests":[{"id":1729363266269,"input":"2\n3\n1 2 3\n4\n2 1 3 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\denilson\\Desktop\\exe\\prefix-sum\\little-chef-and-sums.cpp","group":"local","local":true}
