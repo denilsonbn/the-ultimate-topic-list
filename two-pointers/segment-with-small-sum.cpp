@@ -4,12 +4,21 @@
 
 using namespace std;
 
-int sliding(int n, int sum, vector<ll> nums) {
+ll sliding(int n, ll sum, vector<ll> nums) {
 
-    ll curr=0, ans=0;
+    ll curr=0, ans=0, cont=0;
 
-    for (int r=0, l=0; r<n || l<n;r++) {
+    for (ll r=0, l=0; r<n; r++) {
+        curr += nums[r];
+        cont++;
         
+        while (curr > sum && l<=r) {
+            cont--;
+            curr -= nums[l];
+            l++;
+        }
+
+        ans = max(ans, cont);
         
     }
 
@@ -27,7 +36,9 @@ int main() {
 
     for (int i=0; i<n; i++) cin >> nums[i];
 
-    cout << sliding(n, sum, nums) << "\n";
+    ll longest = sliding(n, sum, nums);
+
+    cout << longest << "\n";
 
     return 0;
 }
