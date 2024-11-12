@@ -1,37 +1,27 @@
-#include <bits/stdc++.h>>
-#define ll long long
+#include <iostream>
 
 using namespace std;
-
-ll gcm(ll a, ll b) {
-    if (a%b == 0) return b;
-
-    if (a<b) return gcm(b%a, a);
-    return gcm(a%b, b);
-}
 
 int main() {
     ios_base::sync_with_stdio(false); cin.tie(0);
 
-    int t; cin >> t;
+    int k; cin >> k;
 
-    unordered_map<ll, ll> sum;
+    while (k--) {
+        int n, div=1; cin >> n;
 
-    while(t--) {
-        ll n; cin >> n;
-
-        ll a=1, small = 1e18;
-
-        for (ll i=2; i<=n/2; i++) {
-            if ((n-i)%i == 0) {
-                a = i;
+        for (int m=2; m*m<=n; m++) {
+            if (n%m == 0) {
+                div = n/m;
                 break;
             }
         }
 
-        cout << a << " " << n-a << "\n";
-        
+        cout << div << " " << n-div << "\n";
+
     }
+
+
 
     return 0;
 }

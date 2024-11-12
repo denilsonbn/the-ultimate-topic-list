@@ -3,11 +3,23 @@
 
 using namespace std;
 
+vector<int> nums;
+
 bool form(ll a, ll b) {
-    cout << a << " ";
-    if (a == b) return 1;
+    
+    if (a == b) {
+        for (auto e:nums) cout << e << " ";
+        return 1;
+    }
     if (a > b) return 0;
-    return form(a*2, b) || form((a*10)+1, b);
+
+    nums.push_back(a*2);
+    form(a*2, b);
+    nums.pop();
+
+    nums.push_back((a*10)+1);
+    form((a*10)+1, b);
+    nums.pop();
 }
 
 int main() {
@@ -16,6 +28,8 @@ int main() {
     ll a, b; cin >> a >> b;
 
     cout << form(a, b) << "\n";
+
+    nums.
 
     return 0;
 }
