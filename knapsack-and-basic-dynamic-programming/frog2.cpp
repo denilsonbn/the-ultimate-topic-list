@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 
+<<<<<<< HEAD
 #define ll long long
 
 using namespace std;
@@ -32,14 +33,26 @@ ll jump(int i, int n, int k, vector<int>& nums) {
 int main() {
     int n{0}, k{0};
     cin >> n >> k;
+=======
+using namespace std;
+
+int main() {
+    int n{0};
+    cin >> n;
+>>>>>>> e2078047aab6d97911da64ea562d1ec8d834ba8e
 
     vector<int> nums(n);
 
     for (int i=0; i<n; i++) cin >> nums[i];
 
+<<<<<<< HEAD
     fill(dp, dp+n, INF);
 
     cout << jump(0, n, k, nums) << "\n";
+=======
+    
+
+>>>>>>> e2078047aab6d97911da64ea562d1ec8d834ba8e
 
     return 0;
 }
