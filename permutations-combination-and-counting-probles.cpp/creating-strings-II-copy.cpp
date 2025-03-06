@@ -33,7 +33,9 @@ ll ans(ll size, unordered_map<char, ll>& freq) {
     ll result = factorial(size);
 
     for (auto& e:freq) {
-        if (e.second > 1) result = (result * power(e.second, MOD-2)) % MOD;
+        if (e.second > 1) {
+            result = (result * power(fat[e.second], MOD-2)) % MOD;
+        }
     }
 
     return result;
