@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int lower(vector<ll> nums, ll value) {
+int lower(vector<ll>& nums, ll value) {
     int l = 0, r = (int) nums.size() - 1;
 
     while (l <= r) {
@@ -18,7 +18,7 @@ int lower(vector<ll> nums, ll value) {
     return -1;
 }
 
-int upper (vector<ll> nums, ll value) {
+int upper (vector<ll>& nums, ll value) {
     int l = 0, r = (int) nums.size() - 1;
     int t = r;
 
