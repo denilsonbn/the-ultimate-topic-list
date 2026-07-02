@@ -2,12 +2,12 @@
 
 using namespace std;
 
-int solve(int n, int k) {
+uint64_t solve(long long n, long long k) {
     if (k == 1) return n;
 
-    int p = 1;
+    uint64_t p = 1;
 
-    while(p < n) {
+    while(p <= n) {
         p <<= 1;
     }
 
@@ -15,7 +15,7 @@ int solve(int n, int k) {
 }
 
 int main() {
-    int n, k;
+    long long n, k;
     cin >> n >> k;
 
     cout << solve(n, k) << "\n";
